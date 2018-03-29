@@ -1,0 +1,82 @@
+EECS 3401
+Sample Test
+
+(i) Answer all questions justifying your answers as completely as possible.
+(ii) If a question is unclear, then make sensible assumptions, write
+them down, and proceed to answer the question.
+
+FIRST GROUP of PROBLEMS (answer YES or NO)
+
+PROBLEMS 1 to 10:
+1. As a knowledge representational language, the language of predicate 
+   logic is less expressive than the language of propositional logic since
+   predicate logic does not have propositional variables.     (YES/NO)
+2. Propositional logic is a tool to investigate formulas that are
+   "proposed" as true in a specified application while predicate
+   logic is a tool to investigate formulas that are "predicted"
+   to be true in a specified application.                 (YES/NO)
+3. Let KB be a finite set of propositional clauses. Level saturation
+   algorithm returns "NO" only if $KB$ is consistent and
+   refutable.                                           (YES/NO
+4. Every set KB of formulas of predicate logic can be translated into logically
+   equivalent set of clauses.                        (YES/NO)
+5. The purpose of the resolution rule in predicate logic is to
+   resolve situations in which two or more different actions can be
+   executed by an AI agent whose knowledge base is implemented in predicate 
+   logic.                                             (YES/NO)
+6. Can the following two clauses be resolved:
+       X < 2+Y :- X < 2   and  -1 < X :-
+      where X and Y are variables.                   (YES/NO)
+7...10
+
+SECOND GROUP of PROBLEMS
+
+PROBLEM 11. The current Web-based search engines are not capable of making logical inferences 
+            (i.e., the inference operation KB |- A is not supported). Would the addition of 
+automated reasoning systems (say based on resolution) improve the performance and/or
+functionality of such engines? Why? How?
+
+PROBLEM 12. Explain the significance of Robinson's theorem on resolution for logic-based
+            knowledge representation.
+
+PROBLEM 13. Let X and Y be two non-empty sets of propositional clauses and X be a subset of Y.
+            Furthermore, suppose that Y is consistent. Can X be refuted?    
+
+
+THIRD GROUP of PROBLEMS
+
+PROBLEM 14. An AI agent AG is designed to communicate in (a fragment of) English.
+To this end, its KB contains a fragment of English in the form of
+the following rules and facts:
+
+(r1) if A is a noun-phrase and B is a verb-phrase, then (A B) is a sentence;
+(r2) if D is a determiner and N is a noun, then (D N) is a noun-phrase;
+(r3) if V is a verb and T is a noun-phrase, then (V T) is a verb-phrase;
+(f1) JOHN is a noun-phrase;
+(f2) STUDENT is a noun;
+(f3) A and THE are determiners;
+(f4) IS is a verb.
+
+In this grammar, the sentence JOHN IS A STUDENT has the
+form (JOHN (IS (A STUDENT))). 
+
+Do the following:
+
+(A) Represent (r1)--(r3) and (f3)--(f4) as predicate logic clauses.
+    To this end, use the following predicates:
+    s(X) -- interpreted as "X is a sentence";
+    np(X)  -- interpreted as "X is a non-phrase";
+    vp(X) -- interpreted as "X is a verb-phrase";
+     n(X) -- interpreted as "X is a noun";
+    vr(X) -- interpreted as "X is a verb";
+    dt(X) -- interpreted as "X is a determiner".
+
+(B) Does AG know that JOHN IS A STUDENT is a
+    sentence? Why?
+
+PROBLEM 15. Find all the resolvents of the following two clauses of first-order logic:
+   (c1) p(X,f(Y)) :- q(Y,f(Y))
+   (c2)  q(2,Z) :- p(2,f(g(T))), p(Z,T)
+
+where: q and p are predicate symbols, f and g are function
+symbols, and X, Y, Z, T are variables.
